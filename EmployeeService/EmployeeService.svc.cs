@@ -48,7 +48,7 @@ namespace EmployeeService
 
         public void EnableEmployee(int id, int enable)
         {
-            string query = "UPDATE Employees SET Enable = @EnableStatus WHERE ID = @EmployeeID";
+            string query = "UPDATE Employee SET Enable = @EnableStatus WHERE ID = @EmployeeID";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
